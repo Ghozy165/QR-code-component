@@ -31,7 +31,7 @@ body {
 
 .card {
     box-sizing: border-box;
-    width: auto;
+    max-width: 288px;
     height: fit-content;
     background-color: var(--white);
     border-radius: 20px;
@@ -41,11 +41,11 @@ body {
     align-items: center;
     justify-content: center;
     gap: 24px;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.11);
 }
 
 .card > img {
-    width: 288px;
-    height: 288px;
+    width: 100%;
     object-fit: contain;
     margin: 0;
     padding: 0;
@@ -53,7 +53,6 @@ body {
 }
 
 .card > .card-description {
-    width: 288px;
     height: fit-content;
     margin: 0;
     display: flex;
@@ -69,8 +68,7 @@ body {
     color: var(--slate-900);
     font-size: 22px;
     font-weight: 700;
-    line-height: 120%;
-    padding: 0 16px;
+    line-height: 1.2;
 }
 
 .card > .card-description > p {
@@ -79,7 +77,6 @@ body {
     color: var(--slate-500);
     font-size: 15px;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 1.4;
     letter-spacing: 0.2px;
-    padding: 0 16px;
 }
